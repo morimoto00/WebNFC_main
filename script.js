@@ -1,7 +1,9 @@
-//Write
 let inputText = document.getElementById("writeText");
 const writeButton = document.getElementById("writeButton");
 const writeLog = document.getElementById("writeLog");
+
+const readButton = document.getElementById("readButton");
+const readLog = document.getElementById("readLog");
 
 writeButton.addEventListener("click", async () => {
   console.log("write button clicked");
@@ -21,10 +23,6 @@ writeButton.addEventListener("click", async () => {
     console.log(error);
   }
 });
-
-//Read
-const readButton = document.getElementById("readButton");
-const readLog = document.getElementById("readLog");
 
 readButton.addEventListener("click", async () => {
   readLog.textContent = await "clicked read button";
