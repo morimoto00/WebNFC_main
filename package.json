@@ -1,20 +1,13 @@
 {
-  "name": "nfc-main",
+  "name": "webnfc-express-server",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "WebNFC Express Server",
+  "main": "server/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node server/index.js"
   },
-  "author": "",
-  "license": "ISC",
-  "keywords": [],
-  "description": "",
   "dependencies": {
-    "express": "^4.18.2",
-    "google-assistant": "^0.7.0",
-    "google-tts-api": "^2.0.2",
-    "xlsx": "^0.18.5"
-  },
-  "devDependencies": {}
+    "express": "^4.17.1",
+    "xlsx": "^0.17.4"
+  }
 }
