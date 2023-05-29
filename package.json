@@ -1,11 +1,13 @@
 {
-  "name": "webnfc-express-server",
+  "name": "web-nfc-app",
   "version": "1.0.0",
-  "description": "WebNFC Express Server",
-  "main": "server/index.js",
+  "description": "Web NFC App",
+  "main": "index.js",
   "scripts": {
-    "start": "node server/index.js"
+    "start": "node index.js"
   },
+  "author": "Your Name",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
     "xlsx": "^0.17.4"

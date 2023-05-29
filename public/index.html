@@ -3,14 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NFC Reader</title>
   <link rel="stylesheet" href="style.css">
-  <title>NFC Tag Reader</title>
 </head>
 <body>
-  <h1>NFC Tag Reader</h1>
-  <button id="readButton">Read NFC Tag</button>
-  <div id="resultContainer"></div>
+  <div class="container">
+    <h1>NFC Reader</h1>
+    <p>NFC Tag ID: <span id="tag-id"></span></p>
+    <p>Read Count: <span id="read-count"></span></p>
+    <p>Last Read Time: <span id="last-read-time"></span></p>
+    <p>User ID: <span id="user-id"></span></p>
+    <p>Start/Stop: <span id="start-stop"></span></p>
+    <button id="export-btn">Export Data</button>
+  </div>
 
-  <script src="index.js"></script>
+  <script src="nfcController.js"></script>
 </body>
 </html>
