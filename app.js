@@ -2,6 +2,11 @@ const express = require('express');
 const xlsx = require('xlsx');
 const googleTTS = require('google-tts-api');
 
+const PORT=process.env.PORT || 3000;
+app.listen(PORT,()=>{
+    console.log("listening server")
+})
+
 const app = express();
 app.use(express.json());
 
@@ -29,6 +34,8 @@ app.get('/', (req, res) => {
 
   // XLSXファイルへの出力
   const workbook = xlsx.utils.book_new();
+
+
   const worksheet = xlsx.utils.json_to_sheet(nfcData);
   xlsx.utils.book_append_sheet(workbook, worksheet, 'NFC Data');
   xlsx.writeFile(workbook, 'nfc_data.xlsx');
